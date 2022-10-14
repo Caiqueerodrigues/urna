@@ -53,7 +53,7 @@ div {
 }
 
 #display {
-    display: none;
+    display: block;
 }
 
 .visor {
@@ -139,6 +139,9 @@ p {
 }
 
 /*botões*/
+input:hover {
+    transform: translate(0px, 2px);
+}
 .num {
     margin-top: 2%;
     width: 20%;

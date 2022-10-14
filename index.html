@@ -12,14 +12,14 @@
     <body>
         <div id="branco">
             <div id="tela">
-                <div id="tela-inicial">
+                <div id="tela-inicial" onmouseenter="inicial()">
                     <h1>Bem Vindo</h1>
                     <h2>Eleições 2022</h2>
                     <br>
                     <h2>Democracia</h2>
                     <h3>Vote Consciente</h3>
                 </div>
-                <div id="display">
+                <section id="display">
                     <div class="visor" id="pri"></div>
                     <div class="visor"></div>
                     <p id="pres">Presidente</p>
@@ -32,7 +32,7 @@
                     <div id="foto2"></div>
                     <p id="nvice">Nome Vice:</p>
                     <div id="nome2"></div>
-                </div>
+                </section>
             </div>
             <div id="teclas">
                 <input type="button" value="1" class="num2" id="um">
@@ -55,7 +55,7 @@
         <script>
             function inicial() {
             var inicial = document.getElementById('tela-inicial')
-                inicial.addEventListener ('mouseenter')
+                inicial.style.display = 'none'
             }
         </script>
     </body>
