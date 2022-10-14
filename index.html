@@ -5,36 +5,39 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="/estilos/style.css">
+        <link rel="stylesheet" href="estilos/style.css">
 
         <title>Urna Eletrônica</title>
     </head>
     <body>
         <div id="branco">
             <div id="tela">
-                <div id="tela-inicial" onmouseenter="inicial()">
-                    <h1>Bem Vindo</h1>
-                    <h2>Eleições 2022</h2>
-                    <br>
-                    <h2>Democracia</h2>
-                    <h3>Vote Consciente</h3>
-                </div>
-                <section id="display">
-                    <div class="visor" id="pri"></div>
-                    <div class="visor"></div>
-                    <p id="pres">Presidente</p>
-                    <div id="foto"></div>
-                    <p>Nome:</p>
-                    <div id="nome"></div>
-                    <p id="part">Partido:</p>
-                    <div id="partido"></div>
-                    <p id="vice">Vice:</p>
-                    <div id="foto2"></div>
-                    <p id="nvice">Nome Vice:</p>
-                    <div id="nome2"></div>
+                <h1 id="final">FIM</h1>
+                <section id="tela-final">
+                    <div id="tela-inicial">
+                        <h1>Bem Vindo</h1>
+                        <h2>Eleições 2022</h2>
+                        <br>
+                        <h2>Democracia</h2>
+                        <h3>Vote Consciente</h3>
+                    </div>
+                    <section id="display">
+                        <div class="visor" id="pri"></div>
+                        <div class="visor"></div>
+                        <p id="pres">Presidente</p>
+                        <div id="foto"></div>
+                        <p>Nome:</p>
+                        <div id="nome"></div>
+                        <p id="part">Partido:</p>
+                        <div id="partido"></div>
+                        <p id="vice">Vice:</p>
+                        <div id="foto2"></div>
+                        <p id="nvice">Nome Vice:</p>
+                        <div id="nome2"></div>
+                    </section>
                 </section>
             </div>
-            <div id="teclas">
+            <div id="teclas" onmouseenter="inicial()">
                 <input type="button" value="1" class="num2" id="um">
                 <input type="button" value="2" class="num" id="dois">
                 <input type="button" value="3" class="num" id="tres"><br>
@@ -47,7 +50,7 @@
                 <input type="button" value="0" class="num" id="z"><br>
                 <input type="button" value="Branco" class="bot" id="bco">
                 <input type="reset" value="Corrige" class="bot" id="corr">
-                <input type="button" value="Confirma" class="bot" id="conf">
+                <input type="button" value="Confirma" class="bot" id="conf" onclick="fim()">
             </div>
         </div>
 
@@ -55,7 +58,17 @@
         <script>
             function inicial() {
             var inicial = document.getElementById('tela-inicial')
-                inicial.style.display = 'none'
+            var inicial2 = document.getElementById('display')
+            inicial.style.display = 'none'   
+            inicial2.style.display = 'block'
+            }
+
+
+            function fim () {
+                var final = document.getElementById('tela-final')
+                var fim = document.querySelector('h1#final')
+                final.style.display = 'none'
+                fim.style.display = 'block'
             }
         </script>
     </body>
