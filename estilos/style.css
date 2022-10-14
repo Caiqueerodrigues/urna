@@ -1,0 +1,181 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+div {
+    display: block;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 3px;
+}
+
+#branco {
+    top: 70%;
+    left: 50%;
+    margin: auto;
+    width: 90vw;
+    height: 30vh;
+    background-color: white;
+}
+
+#tela {
+    top: 50%;
+    left: 31%;
+    width: 55%;
+    height: 85%;
+    background: white;
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.808);
+}
+#tela-inicial {
+    display: none;
+    top: 50%;
+    left: 31%;
+    width: 55%;
+    height: 85%;
+    background: white url(../_imagens/bandeira.jpg);
+    background-size: cover;
+    color: white;
+    border: 2px solid black;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.808);
+    text-align: center;
+}
+
+#display {
+    display: block;
+}
+
+.visor {
+    top: 20%;
+    left: 70%;
+    border: 1px solid black;
+    width: 10%;
+    height: 20%;
+}
+#pri {
+    top: 20%;
+    left: 58%;
+}
+p#pres {
+    top: 2%;
+    left: 9%;
+    font-size: .7em;
+}
+#foto {
+    top: 30%;
+    left: 20%;
+    width: 23%;
+    height: 40%;
+    border: 1px solid black;
+}
+#nome {
+    top: 53%;
+    left: 55%;
+    width: 40%;
+    height: 15%;
+    border: 1px solid black;
+}
+#foto2 {
+    border: 1px solid black;
+    width: 20%;
+    height: 35%;
+    top: 80%;
+    left: 85%;
+}
+p#vice {
+    top: 55%;
+    left: 80%;
+}
+p#nvice {
+    top: 75%;
+    left: 35%;
+}
+#nome2 {
+    top: 90%;
+    left: 53%;
+    width: 40%;
+    height: 13%;
+    border: 1px solid black;
+}
+
+p {
+    display: block;
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    font-weight: bold;
+    font-size: .8em;
+}
+#partido {
+    width: 20%;
+    height: 25%;
+    top: 83%;
+    left: 20%;
+    border: 1px solid black;
+}
+#part {
+    display: block;
+    left: 10%;
+    top: 60%;
+}
+
+#teclas {
+    top: 54%;
+    left: 80%;
+    width: 36%;
+    height: 85%;
+    background-color: rgba(0, 0, 0, 0.671);
+}
+
+/*botões*/
+.num {
+    margin-top: 2%;
+    width: 20%;
+    height: 15%;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 5px black;
+}
+#um, #dois, #tres {
+    margin-top: 10%;
+}
+.num2 {
+    margin-left: 18%;
+    width: 20%;
+    height: 15%;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 5px black;
+    font-weight: bold;
+}
+#z {
+    margin-top: 2%;
+    margin-left: 40% ;
+}
+/*botões de baixo*/
+.bot {
+    margin-top: 2%;
+    width: 30%;
+    height: 15%;
+    font-weight: bold;
+    font-size: .6em;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 5px black;
+}
+#bco {
+    margin-left: 2%;
+}
+#corr {
+    background-color: orangered;
+}
+#conf {
+    background-color: green;
+    height: 20%;
+}
