@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" href="estilos/style.css">
+        <link rel="stylesheet" href="estilos/media-queries.css">
 
         <title>Urna Eletrônica</title>
     </head>
@@ -67,8 +68,17 @@
             function fim () {
                 var final = document.getElementById('tela-final')
                 var fim = document.querySelector('h1#final')
+                /*daqui pra baixo é para adc a saudção*/
+                var agora = new Date()
+                var hr = agora.getHours()
                 final.style.display = 'none'
                 fim.style.display = 'block'
+                if (hr <12) {
+                    fim.innerHTML += `<br>Bom Dia`
+                } else if (hr >=12 && hr <18) {
+                    fim.innerHTML += `<br>Boa Tarde`
+                } else if (hr >= 18 && hr <= 23)
+                    fim.innerHTML += `<br>Boa Noite`
             }
         </script>
     </body>
