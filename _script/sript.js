@@ -28,11 +28,11 @@ var visor2= document.getElementsByClassName('visor')[1]
 
     function tecla1() {
         var tx1 = document.getElementById('um')
-        var t1 = Number(tx1.value)
-        if (t1 ==1) {
+        //var t1 = Number(tx1.value)
+        if (tx1 =='1' && visor1 == '') {
             visor1.innerHTML = '1'
         } else {
-
+            visor2.innerHTML = `1`
         }
     }
     function tecla2() {
@@ -40,6 +40,7 @@ var visor2= document.getElementsByClassName('visor')[1]
         var t2 = Number(tx2.value)
         if (t2 == 2) {
             visor1.innerHTML = '2'
+            alert(visor2.value)
         } 
     }
     function tecla3() {
