@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <input type="button" value="1" id="um" onclick="teclas()">
+        </div><br>
+        <div id="res">
+            Resultado
+        </div>
+
+        <script>
+            function teclas () {
+                var tx1 = document.getElementById('um')
+                var n1 =Number(tx1.value)
+                var res = document.getElementById('res')
+                res.innerHTML = `${n1}`
+            }
+
+        </script>
+    </body>
+</html>
