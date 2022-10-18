@@ -20,84 +20,60 @@
             fim.innerHTML += `<br>Boa Noite`
     }
 
-//nao funcional ainda
-var visor1 = document.getElementsByClassName('visor')[0]
-    var v1=String(visor1.value)
-var visor2= document.getElementsByClassName('visor')[1]
-    var v2=String(visor2.value)
 
-    function tecla1() {
+var visor1 = document.getElementById('pri')
+    visor1.value = `0`
+    var v1=Number(visor1.value)
+var visor2= document.getElementById('seg')
+    visor2.value = `0`
+    var v2=Number(visor2.value)
+
+    function tecla() {
         var tx1 = document.getElementById('um')
-        //var t1 = Number(tx1.value)
-        if (tx1 =='1' && visor1 == '') {
-            visor1.innerHTML = '1'
-        } else {
-            visor2.innerHTML = `1`
+            var t1 = Number(tx1.value)
+        var tx2 = document.getElementById('dois')
+            var t2 = Number(tx2.value)
+        var tx3 = document.getElementById('tres')
+            var t3 = Number(tx3.value)
+        var tx4 = document.getElementById('quatro')
+            var t4 = Number(tx4.value)
+        var tx5 = document.getElementById('cinco')
+            var t5 = Number(tx5.value)
+        var tx6 = document.getElementById('seis')
+            var t6 = Number(tx6.value)
+        var tx7 = document.getElementById('sete')
+            var t7 = Number(tx7.value)
+        var tx8 = document.getElementById('oito')
+            var t8 = Number(tx8.value)
+        var tx9 = document.getElementById('nove')
+            var t9 = Number(tx9.value)
+        var tx0 = document.getElementById('z')
+            var t0 = Number(tx0.value)
+
+        if (visor1.value != 0 && visor2.value != 0) {
+            alert(`[ERRO] Aperte Corrige e Inicie Novamente`)
+            }
+        if (visor1.value == `0` && t1 == 1) {
+            visor1.innerHTML = `${t1}`
+            visor1.value = `1`
+            } else if (visor2.value == `0` && t1 == 1) {
+            visor2.innerHTML = `${t1}`
+            visor2.value = `1`
+            } 
+            //nao funcional ainda
+        if (visor1.value == `0` && t2 == `2`) {
+            visor1.innerHTML = `${t2}`
+            visor1.value = `2`
         }
     }
-    function tecla2() {
-        var tx2 = document.getElementById('dois')
-        var t2 = Number(tx2.value)
-        if (t2 == 2) {
-            visor1.innerHTML = '2'
-            alert(visor2.value)
-        } 
-    }
-    function tecla3() {
-        var tx3 = document.getElementById('tres')
-        var t3 = Number(tx3.value)
-        if (t3 == 3) {
-            visor1.innerHTML = '3'
-        } 
-    }
-    function tecla4() {
-        var tx4 = document.getElementById('quatro')
-        var t4 = Number(tx4.value)
-        if (t4 == 4) {
-            visor1.innerHTML = '4'
-        } 
-    }
-    function tecla5() {
-        var tx5 = document.getElementById('cinco')
-        var t5 = Number(tx5.value)
-        if (t5 == 5) {
-            visor1.innerHTML = '5'
-        } 
-    }
-    function tecla6() {
-        var tx6 = document.getElementById('seis')
-        var t6 = Number(tx6.value)
-        if (t6 == 6) {
-            visor1.innerHTML = '6'
-        } 
-    }
-    function tecla7() {
-        var tx7 = document.getElementById('sete')
-        var t7 = Number(tx7.value)
-        if (t7 == 7) {
-            visor1.innerHTML = '7'
-        } 
-    }
-    function tecla8() {
-        var tx8 = document.getElementById('oito')
-        var t8 = Number(tx8.value)
-        if (t8 == 8) {
-            visor1.innerHTML = '8'
-        } 
-    }
-    function tecla9() {
-        var tx9 = document.getElementById('nove')
-        var t9 = Number(tx9.value)
-        if (t9 == 9) {
-            visor1.innerHTML = '9'
-        } 
-    }
-    function tecla0() {
-        var tx0 = document.getElementById('z')
-        var t0 = Number(tx0.value)
-        if (t0 == 0) {
-            visor1.innerHTML = '0'
-        } 
+
+    function corrige() {
+        visor1.innerHTML = ` `
+        visor2.innerHTML = ` `
+        visor1.value = 0
+        visor2.value = 0
+        v1 = 0
+        v2 = 0
     }
 
     function voto () {
