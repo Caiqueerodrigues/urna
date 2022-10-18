@@ -6,18 +6,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
     </head>
-    <body>
-        <input type="button" value="1" id="um" onclick="teclas()">
+    <body  onclick="teclas()">
+        <input type="button" value="1" id="um">
+        <input type="button" value="2" id="dois">
+        <input type="button" value="3" id="tres">
         </div><br>
         <div id="res">
             Resultado
         </div>
+        <div id="res2">
+            resultado 2
+        </div>
 
         <script>
+            var tx1 = document.getElementById('um')
+            var n1 =Number(tx1.value)
+            var tx2 = document.getElementById('dois')
+            var n2 =Number(tx2.value)
+            var tx3 = document.getElementById('tres')
+            var n3 =Number(tx3.value)
+            var res = document.getElementById('res')
             function teclas () {
-                var tx1 = document.getElementById('um')
-                var n1 =Number(tx1.value)
-                var res = document.getElementById('res')
+                if (n1 == 1)
                 res.innerHTML = `${n1}`
             }
 
