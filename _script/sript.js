@@ -99,7 +99,7 @@ var visor2= document.getElementById('seg')
         if (value == 0 && visor1.value ==`0`) {
             visor1.innerHTML = 0
             visor1.value = `0`
-        } else if (value == 8 && visor2.value == `0`) {
+        } else if (value == 0 && visor2.value == `0`) {
             visor2.innerHTML = 0
             visor2.value = `0`
         }
