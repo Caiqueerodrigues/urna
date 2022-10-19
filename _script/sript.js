@@ -90,18 +90,18 @@ var visor2= document.getElementById('seg')
             visor2.value = `8`
         }
         if (value == 9 && visor1.value == `0`) {
-            visor1.innerHTML = 7
+            visor1.innerHTML = 9
             visor1.value = `9`
         } else if (value == 9 && visor2.value == `0`) {
-            visor2.innerHTML = 7
+            visor2.innerHTML = 9
             visor2.value = `9`
         }
         if (value == 0 && visor1.value ==`0`) {
             visor1.innerHTML = 0
-            visor1.value = `0`
+            visor1.value = `0.0`
         } else if (value == 0 && visor2.value == `0`) {
             visor2.innerHTML = 0
-            visor2.value = `0`
+            visor2.value = `0.0`
         }
 
     }
