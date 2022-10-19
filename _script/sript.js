@@ -1,8 +1,8 @@
     function inicial() {
-    var inicial = document.getElementById('tela-inicial')
-    var inicial2 = document.getElementById('display')
-    inicial.style.display = 'none'   
-    inicial2.style.display = 'block'
+        var inicial = document.getElementById('tela-inicial')
+        var inicial2 = document.getElementById('display')
+        inicial.style.display = 'none'   
+        inicial2.style.display = 'block'
     }
     function fim () {
         var final = document.getElementById('tela-final')
@@ -28,43 +28,82 @@ var visor2= document.getElementById('seg')
     visor2.value = `0`
     var v2=Number(visor2.value)
 
-    function tecla() {
-        var tx1 = document.getElementById('um')
-            var t1 = Number(tx1.value)
-        var tx2 = document.getElementById('dois')
-            var t2 = Number(tx2.value)
-        var tx3 = document.getElementById('tres')
-            var t3 = Number(tx3.value)
-        var tx4 = document.getElementById('quatro')
-            var t4 = Number(tx4.value)
-        var tx5 = document.getElementById('cinco')
-            var t5 = Number(tx5.value)
-        var tx6 = document.getElementById('seis')
-            var t6 = Number(tx6.value)
-        var tx7 = document.getElementById('sete')
-            var t7 = Number(tx7.value)
-        var tx8 = document.getElementById('oito')
-            var t8 = Number(tx8.value)
-        var tx9 = document.getElementById('nove')
-            var t9 = Number(tx9.value)
-        var tx0 = document.getElementById('z')
-            var t0 = Number(tx0.value)
-
+    function tecla(value) {
         if (visor1.value != 0 && visor2.value != 0) {
             alert(`[ERRO] Aperte Corrige e Inicie Novamente`)
             }
-        if (visor1.value == `0` && t1 == 1) {
-            visor1.innerHTML = `${t1}`
-            visor1.value = `1`
-            } else if (visor2.value == `0` && t1 == 1) {
-            visor2.innerHTML = `${t1}`
-            visor2.value = `1`
+
+        if (value == 1 && visor1.value == `0`) {
+            visor1.innerHTML = 1
+            visor1.value = '1'
+            } else if (value == 1 && visor2.value == `0`) {
+            visor2.innerHTML = 1
+            visor2.value = '1'
             } 
-            //nao funcional ainda
-        if (visor1.value == `0` && t2 == `2`) {
-            visor1.innerHTML = `${t2}`
-            visor1.value = `2`
+        if (value == 2 && visor1.value == `0` ) {
+            visor1.innerHTML = 2
+            visor1.value = '2'
+        } else if (value == 2 && visor2.value == `0`) {
+            visor2.innerHTML = 2
+            visor2.value = '2'
         }
+        if (value == 3 && visor1.value == `0`) {
+            visor1.innerHTML = 3
+            visor1.value = `3`
+        } else if (value == 3 && visor2.value == `0`) {
+            visor2.innerHTML = 3
+            visor2.value = `3`
+        }
+        if (value == 4 && visor1.value == `0`) {
+            visor1.innerHTML = 4
+            visor1.value= `4`
+        } else if (value == 4 && visor2.value == `0`) {
+            visor2.innerHTML = 4
+            visor2.value = `4`
+        }
+        if (value == 5 && visor1.value == `0`) {
+            visor1.innerHTML = 5
+            visor1.value = `5`
+        } else if (value == 5 && visor2.value == `0`) {
+            visor2.innerHTML = 5
+            visor2.value = `5`
+        }
+        if (value == 6 && visor1.value == `0`) {
+            	visor1.innerHTML = 6
+                visor1.value = `6`
+        } else if (value == 6 && visor2.value == `0`) {
+            visor2.innerHTML = 6
+            visor2.value = `6`
+        }
+        if (value == 7 && visor1.value == `0`) {
+            visor1.innerHTML = 7
+            visor1.value = `7`
+        } else if (value == 7 && visor2.value == `0`) {
+            visor2.innerHTML = 7
+            visor2.value = `7`
+        }
+        if (value == 8 && visor1.value == `0`) {
+            visor1.innerHTML = 8
+            visor1.value = `8`
+        } else if (value == 8 && visor2.value == `0`) {
+            visor2.innerHTML = 8
+            visor2.value = `8`
+        }
+        if (value == 9 && visor1.value == `0`) {
+            visor1.innerHTML = 7
+            visor1.value = `9`
+        } else if (value == 9 && visor2.value == `0`) {
+            visor2.innerHTML = 7
+            visor2.value = `9`
+        }
+        if (value == 0 && visor1.value ==`0`) {
+            visor1.innerHTML = 0
+            visor1.value = `0`
+        } else if (value == 8 && visor2.value == `0`) {
+            visor2.innerHTML = 0
+            visor2.value = `0`
+        }
+
     }
 
     function corrige() {
