@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to bottom, green, yellow, blue);
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+    width: 150px;
+    height: 200px;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 20px;
+    background-color: aliceblue;
+    box-shadow: 0px 0px 15px rgb(0, 87, 0);
+}
+div#candidato1 {
+   background-image: url(../_imagens/_santinhos/marioo-prof.png);
+}
+div#candidato2 {
+    background-image: url(../_imagens/_santinhos/luigi-mariazinha.png);
+}
+div#candidato3 {
+    background-image: url(../_imagens/_santinhos/robo-joao.png);
+}
+div#candidato4 {
+    background-image: url(../_imagens/_santinhos/yoshi-pedrinho.png);
+}
+
+img {
+    display: block;
+    position: absolute;
+    width: 100px;
+    top: 60%;
+    left: 70%;
+}
+img:hover {
+    transform: translate(10% , 10%);
+    transition: .3s;
+}

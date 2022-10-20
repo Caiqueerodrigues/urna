@@ -11,51 +11,73 @@
         <title>Urna Eletrônica</title>
     </head>
     <body>
-        <div id="branco">
-            <div id="tela">
-                <h1 id="final">FIM</h1>
-                <section id="tela-final">
-                    <div id="tela-inicial">
-                        <h1>Bem Vindo</h1>
-                        <h2>Eleições 2022</h2>
-                        <br>
-                        <h2>Democracia</h2>
-                        <h3>Vote Consciente</h3>
-                    </div>
-                    <section id="display">
-                        <div class="visor" id="pri"></div>
-                        <div class="visor" id="seg"></div>
-                        <p id="pres">Presidente</p>
-                        <div id="foto"></div>
-                        <p>Nome:</p>
-                        <div id="nome"></div>
-                        <p id="part">Partido:</p>
-                        <div id="partido"></div>
-                        <p id="vice">Vice:</p>
-                        <div id="foto2"></div>
-                        <p id="nvice">Nome Vice:</p>
-                        <div id="nome2"></div>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="candidatos.html">Candidatos</li></a>
+                </ul>
+            </nav>
+            <section id="santinhos">
+                <div id="candidato1" class="foto"></div>
+                <div id="candidato2" class="foto"></div>
+                <div id="candidato3" class="foto"></div>
+                <div id="candidato4" class="foto"></div>
+            </section>
+        </header>
+        <main>
+            <div id="branco">
+                <div id="tela">
+                    <h1 id="final">FIM</h1>
+                    <section id="tela-final">
+                        <div id="tela-inicial">
+                            <h1>Bem Vindo</h1>
+                            <h2>Eleições 2022</h2>
+                            <br>
+                            <h2>Democracia</h2>
+                            <h3>Vote Consciente</h3>
+                        </div>
+                        <section id="display">
+                            <div class="visor" id="pri"></div>
+                            <div class="visor" id="seg"></div>
+                            <section>
+                                <p id="pres">Presidente</p>
+                                <div id="foto"></div>
+                                <p>Nome:</p>
+                                <div id="presnome"></div>
+                                <p id="part">Partido:</p>
+                                <div id="partido"></div>
+                            </section>
+                            <section>
+                                <p id="vice">Vice:</p>
+                                <div id="foto2"></div>
+                                <p id="nvice">Nome Vice:</p>
+                                <div id="nome2"></div>
+                            </section>
+                        </section>
                     </section>
-                </section>
+                </div>
+                <div id="teclas" onmouseenter="inicial()">
+                    <input type="button" value="1" class="num2" id="um" onclick="tecla(1)">
+                    <input type="button" value="2" class="num" id="dois" onclick="tecla(2)">
+                    <input type="button" value="3" class="num" id="tres" onclick="tecla(3)"><br>
+                    <input type="button" value="4" class="num2" id="quatro" onclick="tecla(4)">
+                    <input type="button" value="5" class="num" id="cinco" onclick="tecla(5)">
+                    <input type="button" value="6" class="num" id="seis" onclick="tecla(6)"><br>
+                    <input type="button" value="7" class="num2" id="sete" onclick="tecla(7)">
+                    <input type="button" value="8" class="num" id="oito" onclick="tecla(8)">
+                    <input type="button" value="9" class="num" id="nove" onclick="tecla(9)"><br>
+                    <input type="button" value="0" class="num" id="z" onclick="tecla(0)"><br>
+                    <!--Botoões coloridos-->
+                    <input type="button" value="Branco" class="bot" id="bco">
+                    <input type="reset" value="Corrige" class="bot" id="corr" onclick="corrige()">
+                    <input type="button" value="Confirma" class="bot" id="conf" onclick="fim()">
+                </div>
             </div>
-            <div id="teclas" onmouseenter="inicial()">
-                <input type="button" value="1" class="num2" id="um" onclick="tecla(1)">
-                <input type="button" value="2" class="num" id="dois" onclick="tecla(2)">
-                <input type="button" value="3" class="num" id="tres" onclick="tecla(3)"><br>
-                <input type="button" value="4" class="num2" id="quatro" onclick="tecla(4)">
-                <input type="button" value="5" class="num" id="cinco" onclick="tecla(5)">
-                <input type="button" value="6" class="num" id="seis" onclick="tecla(6)"><br>
-                <input type="button" value="7" class="num2" id="sete" onclick="tecla(7)">
-                <input type="button" value="8" class="num" id="oito" onclick="tecla(8)">
-                <input type="button" value="9" class="num" id="nove" onclick="tecla(9)"><br>
-                <input type="button" value="0" class="num" id="z" onclick="tecla(0)"><br>
-                <!--Botoões coloridos-->
-                <input type="button" value="Branco" class="bot" id="bco">
-                <input type="reset" value="Corrige" class="bot" id="corr" onclick="corrige()">
-                <input type="button" value="Confirma" class="bot" id="conf" onclick="fim()">
-            </div>
-        </div>
+        </main>
 
+        <footer>
+            <p>&copy; Desenvolvido por <a href="https://www.linkedin.com/in/caique-rodrigues-a113ab249/" target="_blank">Caique Rodrigues</a></p>
+        </footer>
 
         <script src="_script/sript.js"></script>
     </body>

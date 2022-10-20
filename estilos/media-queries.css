@@ -1,7 +1,9 @@
 @charset "utf-8";
 
-@media screen and (min: 300px) {
-    
+@media screen and (min-width: 300px) {
+    section#santinhos {
+        display: none;
+    }
 }
 @media screen and (min-width: 769px) and (max-width: 992px) {
     body {
@@ -9,6 +11,13 @@
         transition: .5s;
     }
     
+    nav{
+        display: block;
+    }
+    section#santinhos {
+        display: none;
+    }
+
     #branco {
         max-width: 700px;
         height: 250px;
@@ -16,6 +25,10 @@
 
     #um, #dois, #tres {
         margin-top: 10px;
+    }
+
+    footer > p {
+        padding-left: 50%;
     }
 }
 
@@ -24,6 +37,12 @@
         background-color: rgb(1, 68, 24);
         transition: .5s;
     }
+    nav {
+        display: none;
+    }
+    section#santinhos {
+        display: block;
+    }
     
     #branco {
         max-width: 700px;
@@ -32,5 +51,9 @@
 
     #um, #dois, #tres {
         margin-top: 10px;
+    }
+    
+    footer > p {
+        padding-left: 50%;
     }
 }

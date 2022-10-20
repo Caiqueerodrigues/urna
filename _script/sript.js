@@ -23,10 +23,10 @@
 
 var visor1 = document.getElementById('pri')
     visor1.value = `0`
-    var v1=Number(visor1.value)
 var visor2= document.getElementById('seg')
     visor2.value = `0`
-    var v2=Number(visor2.value)
+
+var nomepresidente = getElementById('presnome')
 
     function tecla(value) {
         if (visor1.value != 0 && visor2.value != 0) {
@@ -103,8 +103,16 @@ var visor2= document.getElementById('seg')
             visor2.innerHTML = 0
             visor2.value = `0.0`
         }
+        var  voto = visor1.value + visor2.value
+        alert(`${voto}`)
 
+        switch (voto) {
+            case `23`: {
+              alert(`teste`)
+        }
+        
     }
+}
 
     function corrige() {
         visor1.innerHTML = ` `
@@ -113,29 +121,4 @@ var visor2= document.getElementById('seg')
         visor2.value = 0
         v1 = 0
         v2 = 0
-    }
-
-    function voto () {
-        var ft = document.getElementById('foto')
-            
-        var voto= v1 + v2
-        switch (voto) {
-            case 23: {
-        
-
-            }break
-            case 37: {
-
-            }break
-            case 49: {
-
-            }break
-            case  63: {
-
-            }break
-            default:{
-
-            }
-        }
-    
     }
