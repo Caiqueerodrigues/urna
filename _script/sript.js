@@ -26,7 +26,13 @@ var visor1 = document.getElementById('pri')
 var visor2= document.getElementById('seg')
     visor2.value = `0`
 
-var nomepresidente = document.getElementById('presnome')
+var presidente = [
+    document.getElementById('foto'),
+    document.getElementById('presnome'),
+    document.getElementById('partido'),
+    document.getElementById('foto2'),//foto do vice
+    document.getElementById('nome2'),//nome do vice
+]
 
     function tecla(value) {
         if (visor1.value != 0 && visor2.value != 0) {
@@ -107,22 +113,34 @@ var nomepresidente = document.getElementById('presnome')
 
         switch (voto) {
             case `23`: {
-              nomepresidente.innerHTML = `Luigi Brós`
+                presidente[1].innerHTML = `Luigi Brós`
+                presidente[2].innerHTML = `Partido Popular`
+                presidente[4].innerHTML = `Mariazinha da Padaria`
             }
             break
             case `45`: {
-                nomepresidente.innerHTML = `Mário Brós`
+                presidente[1].innerHTML = `Mário Brós`
+                presidente[2].innerHTML = `Partido Trabalhista`
+                presidente[4].innerHTML = `Prof Augusto`
             }
             break
             case `33`: {
-                nomepresidente.innerHTML = `Robô Léo`
+                presidente[1].innerHTML = `Robô Léo`
+                presidente[2].innerHTML = `Partido Liberal`
+                presidente[4].innerHTML = `João do Povo`
             }
             break
             case `16`: {
-                nomepresidente.innerHTML = `Yoshi Munchakoopas`
+                presidente[1].innerHTML = `Yoshi Munchakoopas`
+                presidente[2].innerHTML = `Partido Tecnológico`
+                presidente[4].innerHTML = `Pedrinho Mecânico`
             }
             default: {
-                nomepresidente.innerHTML = `Voto Nulo` 
+                presidente[0].innerHTML = `Voto Nulo`
+                presidente[1].innerHTML = `Voto Nulo`
+                presidente[2].innerHTML = `Voto Nulo`
+                presidente[3].innerHTML = `Voto Nulo`
+                presidente[4].innerHTML = `Voto Nulo`
             }
         
     }
@@ -135,4 +153,9 @@ var nomepresidente = document.getElementById('presnome')
         visor2.value = 0
         v1 = 0
         v2 = 0
+        presidente[0].innerHTML = ` `
+        presidente[1].innerHTML = ` `
+        presidente[2].innerHTML = ` `
+        presidente[3].innerHTML = ` `
+        presidente[4].innerHTML = ` `
     }

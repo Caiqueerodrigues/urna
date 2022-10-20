@@ -129,6 +129,7 @@ h1#final {
     border: 1px solid black;
     width: 10%;
     height: 20%;
+    background-color: rgba(179, 179, 179, 0.281);
 }
 #pri {
     top: 20%;
@@ -139,6 +140,9 @@ p#pres {
     left: 9%;
     font-size: .7em;
 }
+.candidatos {
+    background-color: rgba(179, 179, 179, 0.281);
+}
 #foto {
     top: 30%;
     left: 20%;
@@ -146,6 +150,8 @@ p#pres {
     height: 40%;
     margin: auto;
     border: 1px solid black;
+    text-align: center;
+    font-weight: bold;
 }
 #presnome {
     top: 53%;
@@ -163,6 +169,8 @@ p#pres {
     height: 35%;
     top: 80%;
     left: 85%;
+    font-weight: bold;
+    text-align: center;
 }
 p#vice {
     top: 55%;
@@ -177,6 +185,9 @@ p#nvice {
     left: 53%;
     width: 40%;
     height: 13%;
+    text-align: center;
+    font-size: .8em;
+    font-weight: bold;
     border: 1px solid black;
 }
 
@@ -193,6 +204,9 @@ p {
     height: 25%;
     top: 83%;
     left: 20%;
+    font-size: .8em;
+    font-weight: bold;
+    text-align: center;
     border: 1px solid black;
 }
 #part {
