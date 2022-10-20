@@ -26,7 +26,7 @@ var visor1 = document.getElementById('pri')
 var visor2= document.getElementById('seg')
     visor2.value = `0`
 
-var nomepresidente = getElementById('presnome')
+var nomepresidente = document.getElementById('presnome')
 
     function tecla(value) {
         if (visor1.value != 0 && visor2.value != 0) {
@@ -104,12 +104,26 @@ var nomepresidente = getElementById('presnome')
             visor2.value = `0.0`
         }
         var  voto = visor1.value + visor2.value
-        alert(`${voto}`)
 
         switch (voto) {
             case `23`: {
-              alert(`teste`)
-        }
+              nomepresidente.innerHTML = `Luigi Brós`
+            }
+            break
+            case `45`: {
+                nomepresidente.innerHTML = `Mário Brós`
+            }
+            break
+            case `33`: {
+                nomepresidente.innerHTML = `Robô Léo`
+            }
+            break
+            case `16`: {
+                nomepresidente.innerHTML = `Yoshi Munchakoopas`
+            }
+            default: {
+                nomepresidente.innerHTML = `Voto Nulo` 
+            }
         
     }
 }

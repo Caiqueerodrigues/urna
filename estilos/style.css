@@ -152,7 +152,9 @@ p#pres {
     left: 55%;
     width: 40%;
     height: 15%;
-    font-size: .7em;
+    font-size: .8em;
+    font-weight: bold;
+    text-align: center;
     border: 1px solid black;
 }
 #foto2 {
