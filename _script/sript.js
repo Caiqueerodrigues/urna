@@ -140,8 +140,6 @@ var  voto = visor1.value + visor2.value
                 presidente[2].innerHTML = `Voto Nulo`
                 presidente[3].innerHTML = `Voto Nulo`
                 presidente[4].innerHTML = `Voto Nulo`
-                visor1.value = 1.5
-                visor2.value = 1.5
             }
         
     }
