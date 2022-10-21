@@ -239,7 +239,7 @@ input:hover {
     font-weight: bold;
 }
 #um, #dois, #tres {
-    margin-top: 10%;
+    margin-top: 5%;
 }
 .num2 {
     margin-left: 18%;
@@ -255,7 +255,7 @@ input:hover {
 }
 /*botões de baixo*/
 .bot {
-    margin-top: 2%;
+    margin-top: 0%;
     width: 30%;
     height: 15%;
     font-weight: bold;
