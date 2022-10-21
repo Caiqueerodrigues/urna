@@ -152,6 +152,8 @@ p#pres {
     border: 1px solid black;
     text-align: center;
     font-weight: bold;
+    font-size: .7em;
+    text-align: center;
 }
 #presnome {
     top: 53%;
@@ -169,6 +171,7 @@ p#pres {
     height: 35%;
     top: 80%;
     left: 85%;
+    font-size: .7em;
     font-weight: bold;
     text-align: center;
 }

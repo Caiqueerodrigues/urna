@@ -4,6 +4,17 @@
     section#santinhos {
         display: none;
     }
+
+    #part {
+        top: 55%;
+        left: 5%;
+    }
+    #partido {
+        width: 25%;
+        margin-left: -10px;
+        height: 30%;
+        font-weight: .5em;
+    }
 }
 @media screen and (min-width: 769px) and (max-width: 992px) {
     body {
