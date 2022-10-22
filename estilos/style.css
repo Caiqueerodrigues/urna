@@ -9,7 +9,14 @@
 body {
     background-color: black;
 }
-
+header h1 {
+    color: red;
+    font-size: 1.5em;
+    text-align: center;
+    margin: auto;
+    margin: 20px 0px;
+    text-indent: 40px;
+}
 nav > ul > li > a {
     display: block;
     text-decoration: none;
@@ -207,7 +214,8 @@ p {
     height: 25%;
     top: 83%;
     left: 20%;
-    font-size: .8em;
+    padding-top: 10px;
+    font-size: .7em;
     font-weight: bold;
     text-align: center;
     border: 1px solid black;

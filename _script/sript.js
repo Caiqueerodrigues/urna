@@ -101,27 +101,55 @@ var  voto = visor1.value + visor2.value
 
         switch (voto) {
             case `23`: {
+                presidente[0].innerHTML = ``
+                presidente[0].style.backgroundImage= "url('_imagens/luigi-candidato.jpg')"
+                presidente[0].style.backgroundSize = `cover`
                 presidente[1].innerHTML = `Luigi Brós`
                 presidente[2].innerHTML = `Popular`
+                presidente[3].style.backgroundImage = "url('_imagens/luigi-candidato-vice.jpg')"
+                presidente[3].style.backgroundSize = `cover`
+                presidente[3].style.backgroundPosition = `center center`
+                presidente[3].innerText = ``
                 presidente[4].innerHTML = `Mariazinha`
             }
             break
             case `45`: {
+                presidente[0].innerHTML = ``
+                presidente[0].style.backgroundImage= "url('_imagens/mario-candidato.jpg')"
+                presidente[0].style.backgroundSize = `cover`
                 presidente[1].innerHTML = `Mário Brós`
-                presidente[2].innerHTML = `Do Povo`
+                presidente[2].innerHTML = `Do </br> Povo`
+                presidente[3].innerText = ``
+                presidente[3].style.backgroundImage = "url('_imagens/mario-candidato-vice.jpg')"
+                presidente[3].style.backgroundSize = `cover`
+                presidente[3].style.backgroundPosition = `left center`
                 presidente[4].innerHTML = `Prof Augusto`
             }
             break
             case `33`: {
+                presidente[0].innerHTML = ``
+                presidente[0].style.backgroundImage= "url('_imagens/robo-candidato.jpg')"
+                presidente[0].style.backgroundSize = `cover`
                 presidente[1].innerHTML = `Robô Léo`
                 presidente[2].innerHTML = `Liberal`
+                presidente[3].innerHTML = ``
+                presidente[3].style.backgroundImage = "url('_imagens/robo-candidato-vice.jpg')"
+                presidente[3].style.backgroundPosition = `center top`
+                presidente[3].style.backgroundSize = `cover`
                 presidente[4].innerHTML = `João do Povo`
             }
             break
             case `16`: {
+                presidente[0].innerHTML = ``
+                presidente[0].style.backgroundImage= "url('_imagens/yoshi-candidato.jpg')"
+                presidente[0].style.backgroundSize = `cover`
                 presidente[1].innerHTML = `Yoshi Munchakoopas`
-                presidente[2].innerHTML = `Tecnológico`
-                presidente[4].innerHTML = `Pedrinho Mecânico`
+                presidente[2].innerHTML = `Tec`
+                presidente[3].innerHTML = ``
+                presidente[3].style.backgroundImage = "url('_imagens/yoshi-candidato-vice.jpg')"
+                presidente[3].style.backgroundSize = `cover`
+                presidente[3].style.backgroundPosition = `center center`
+                presidente[4].innerHTML = `Pedro Mec`
             }
             break
             case '1.51.5': {
@@ -153,9 +181,11 @@ var  voto = visor1.value + visor2.value
         v1 = 0
         v2 = 0
         presidente[0].innerHTML = ` `
+        presidente[0].style.backgroundImage = ""
         presidente[1].innerHTML = ` `
         presidente[2].innerHTML = ` `
         presidente[3].innerHTML = ` `
+        presidente[3].style.backgroundImage = ""
         presidente[4].innerHTML = ` `
     }
 
