@@ -41,7 +41,6 @@ img {
     position: absolute;
     width: 100px;
     top: 70%;
-    left: 20%;
 }
 img:hover {
     transform: translate(10% , 10%);
