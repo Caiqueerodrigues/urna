@@ -40,8 +40,8 @@ img {
     display: block;
     position: absolute;
     width: 100px;
-    top: 60%;
-    left: 70%;
+    top: 70%;
+    left: 20%;
 }
 img:hover {
     transform: translate(10% , 10%);
