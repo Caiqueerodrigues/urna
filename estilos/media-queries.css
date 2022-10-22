@@ -32,6 +32,11 @@
         transition: .5s;
     }
     
+    #som {
+        left: 80vw;
+        top: 20vh;
+    }
+
     nav{
         display: block;
     }
@@ -40,7 +45,7 @@
     }
 
     #branco {
-        margin-top: 30px;
+        margin-top: 120px;
         max-width: 700px;
         height: 250px;
     }
@@ -49,13 +54,9 @@
         margin-top: 10px;
     }
 
-    footer {
-        display: block;
-        position: absolute;
-        top: 130vh;
-    }
     footer > p {
-        padding-left: 50%;
+        margin-top: 200px;
+        text-align: center;
     }
 }
 
@@ -65,6 +66,12 @@
         transition: .5s;
         overflow: hidden;
     }
+
+    #som {
+        top: 50vh;
+        left: 50vw;
+    }
+
     nav {
         display: none;
     }

@@ -4,6 +4,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+
 }
 
 body {
@@ -42,6 +43,15 @@ div {
     transform: translate(-50%, -50%);
     border-radius: 3px;
     background: white;
+}
+
+#som {
+    display: block;
+    position: absolute;
+    top: 40vh;
+    left: 50vw;
+    border-radius: 50%;
+    box-shadow: 1px 1px 4px white;
 }
 
 div.foto {

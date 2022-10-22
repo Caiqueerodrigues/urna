@@ -17,6 +17,10 @@ var presidente = [
     document.getElementById('foto2'),//foto do vice
     document.getElementById('nome2'),//nome do vice
 ]
+var audio = [
+    document.getElementById('somTecla'),
+    document.getElementById('somFinal')
+]
 
     function tecla(value) {
         if (visor1.value != 0 && visor2.value != 0) {
@@ -97,6 +101,7 @@ var presidente = [
           visor1.value = `1.5`
           visor2.value = `1.5`  
         }
+        audio[0].play()
 var  voto = visor1.value + visor2.value
 
         switch (voto) {
@@ -187,6 +192,7 @@ var  voto = visor1.value + visor2.value
         presidente[3].innerHTML = ` `
         presidente[3].style.backgroundImage = ""
         presidente[4].innerHTML = ` `
+        audio[0].play()
     }
 
     function fim () {
@@ -195,6 +201,7 @@ var  voto = visor1.value + visor2.value
             var fim = document.querySelector('h1#final')
             visor1.value = 1.7
             visor2.value = 1.7
+            audio[1].play()
 
             /*daqui pra baixo é para adc a saudção*/
             var agora = new Date()
@@ -205,10 +212,11 @@ var  voto = visor1.value + visor2.value
                 alert(`[ERRO] Por favor, Escolha um Candidato`)
             }
             if (hr <12) {
-                fim.innerHTML += `<br>Bom Dia`
+                fim.innerHTML = `FIM<br>Bom Dia`
+                
             } else if (hr >=12 && hr <18) {
-                fim.innerHTML += `<br>Boa Tarde`
+                fim.innerHTML = `FIM<br>Boa Tarde`
             } else if (hr >= 18 && hr <= 0) {
-                fim.innerHTML += `<br>Boa Noite`
+                fim.innerHTML = `FIM<br>Boa Noite`
             }
     }
