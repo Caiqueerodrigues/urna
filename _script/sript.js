@@ -202,21 +202,21 @@ var  voto = visor1.value + visor2.value
             visor1.value = 1.7
             visor2.value = 1.7
             audio[1].play()
-
             /*daqui pra baixo é para adc a saudção*/
             var agora = new Date()
             var hr = agora.getHours()
             final.style.display = 'none'
             fim.style.display = 'block'
+            
             }else {
                 alert(`[ERRO] Por favor, Escolha um Candidato`)
             }
-            if (hr <12) {
-                fim.innerHTML = `FIM<br>Bom Dia`
-                
-            } else if (hr >=12 && hr <18) {
-                fim.innerHTML = `FIM<br>Boa Tarde`
-            } else if (hr >= 18 && hr <= 0) {
-                fim.innerHTML = `FIM<br>Boa Noite`
+            if (hr < 12) {
+                fim.innerHTML = `FIM <br> Bom Dia`
+            } else if (hr >= 12 && hr <= 18) {
+                fim.innerHTML = `FIM <br> Boa tarde`
+            } else if (hr >=18 && hr <= 23.59 ) {
+                fim.innerHTML = `FIM <br> Boa noite`
             }
+
     }
