@@ -193,6 +193,9 @@ var  voto = visor1.value + visor2.value
             if (visor1.value != 0 && visor1.value != 0) {
             var final = document.getElementById('tela-final')
             var fim = document.querySelector('h1#final')
+            visor1.value = 1.7
+            visor2.value = 1.7
+
             /*daqui pra baixo é para adc a saudção*/
             var agora = new Date()
             var hr = agora.getHours()
@@ -205,7 +208,7 @@ var  voto = visor1.value + visor2.value
                 fim.innerHTML += `<br>Bom Dia`
             } else if (hr >=12 && hr <18) {
                 fim.innerHTML += `<br>Boa Tarde`
-            } else if (hr >= 18 && hr <= 23) {
+            } else if (hr >= 18 && hr <= 0) {
                 fim.innerHTML += `<br>Boa Noite`
             }
     }

@@ -40,6 +40,7 @@
     }
 
     #branco {
+        margin-top: 30px;
         max-width: 700px;
         height: 250px;
     }
@@ -48,6 +49,11 @@
         margin-top: 10px;
     }
 
+    footer {
+        display: block;
+        position: absolute;
+        top: 130vh;
+    }
     footer > p {
         padding-left: 50%;
     }
@@ -57,6 +63,7 @@
     body {
         background-color: rgb(1, 68, 24);
         transition: .5s;
+        overflow: hidden;
     }
     nav {
         display: none;
@@ -66,6 +73,7 @@
     }
     
     #branco {
+        top: 75vh;
         max-width: 700px;
         height: 250px;
     }
@@ -73,8 +81,11 @@
     #um, #dois, #tres {
         margin-top: 10px;
     }
-    
-    footer > p {
-        padding-left: 50%;
+
+    #candidato2, #candidato3 {
+        margin-top: 50px;
+    }
+    #candidato1, #candidato4 {
+        margin-top: 100px;
     }
 }
