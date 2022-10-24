@@ -38,10 +38,14 @@ div#candidato4 {
 
 img {
     display: block;
-    position: absolute;
+    position: relative;
     width: 100px;
     top: 70%;
 }
+body > main > a > img {
+    position: sticky;
+    top: 50vh;
+} 
 img:hover {
     transform: translate(10% , 10%);
     transition: .3s;
