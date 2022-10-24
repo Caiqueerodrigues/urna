@@ -44,7 +44,7 @@ img {
 }
 body > main > a > img {
     position: sticky;
-    top: 50vh;
+    top: 50%;
 } 
 img:hover {
     transform: translate(10% , 10%);
